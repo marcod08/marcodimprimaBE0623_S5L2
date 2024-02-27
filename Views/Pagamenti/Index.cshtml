@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Pagamenti";
+}
+
+<div class="container">
+    <h1>Pagamenti</h1>
+    <form>
+        <div class="form-group mt-3">
+            <label for="inputDipendente">Dipendente</label>
+            <select id="inputDipendente" class="form-control">
+                <option selected>Scegli...</option>
+                <option>Dipendente 1</option>
+                <option>Dipendente 2</option>
+                <option>Dipendente 3</option>
+                <option>Dipendente 4</option>
+                <option>Dipendente 5</option>
+            </select>
+        </div>
+        <div class="form-row mt-2">
+            <div class="form-group col">
+                <label for="inputPeriodoPagamento">Periodo di Pagamento</label>
+                <input type="text" class="form-control" id="inputPeriodoPagamento" placeholder="Periodo">
+            </div>
+            <div class="form-group col mt-2">
+                <label for="inputAmmontarePagamento">Ammontare del Pagamento</label>
+                <input type="number" class="form-control" id="inputAmmontarePagamento" placeholder="Ammontare">
+            </div>
+        </div>
+        <div class="form-group mt-2">
+            <label for="inputTipoPagamento">Tipo di Pagamento</label>
+            <select id="inputTipoPagamento" class="form-control">
+                <option selected>Scegli...</option>
+                <option>Stipendio</option>
+                <option>Acconto</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Invia</button>
+    </form>
+</div>
